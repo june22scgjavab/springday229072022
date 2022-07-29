@@ -1,0 +1,45 @@
+
+com.xyzairlines.dto;
+public class TicketDTO {
+int id;
+String passName;
+}
+------------------------------------------------------------------------------------------------------------------------------
+com.xyzairlines.validator;
+public class Validator {
+
+   public void validate(TicketDTO ticketDTO){}
+
+  // id will be 10 digits
+ // passName will be with alphabets
+
+}
+-------------------------------------------------------------------------------------------------------------------------------
+com.xyzairlines.exception;
+public class AirlineReservException extends Exception {}
+
+
+
+com.xyzairlines.service;
+class TicketServiceImpl implements TicketService{
+      public String addTicket(TicketDTO ticketDTO){
+   
+        
+     return "success";
+      }
+}
+---------------------------------------------------------------------------------------------------------------------------
+com.xyzairlines.repository;
+class TicketRepositoryImpl implements TicketRepository{
+
+  private List<TicketDTO> tickets=new ArrayList<>();
+  public void addTicket(TicketDTO ticketDTO){
+   
+        
+    
+      }
+}
+----------------------------------------------------------------------------------------------------------------------
+
+com.xyzairlines;
+class AirlinesApplication {}    artifactid airlines
